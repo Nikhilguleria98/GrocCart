@@ -2,6 +2,6 @@
 
 @layer components {
     .responsivewidth {
-      @apply mx-auto w-[94%] sm:w-[90%] md:w-[88%] lg:w-[86%];
+      @apply mx-auto w-[94%] sm:w-[90%] md:w-[88%] lg:w-[89.5%];
     }
   }

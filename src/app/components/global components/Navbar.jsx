@@ -47,7 +47,7 @@ const Navbar = () => {
 
         {
             isOpen && (
-                <nav className='flex flex-col md:justify-evenly justify-between items-center p-5 md:p-2 w-1/2 h-screen bg-green-500  absolute top-16 right-0'>
+                <nav className='flex flex-col md:justify-evenly justify-between items-center p-5 md:p-2 w-1/2 h-screen bg-green-500  absolute top-16 right-0 z-50'>
                
                 <div className='flex flex-col md:hidden gap-5'>
                     {links.map((link,index)=>(
