@@ -8,19 +8,21 @@ const Hero = () => {
       title: 'Farm-Fresh Groceries Delivered Daily',
       desc: 'Straight from local farms to your doorstep — crisp, clean, and full of flavor.',
       img: '/hero1.webp',
-      color:'text-black'
+      color:'text-gray-600'
     },
     {
       id: 2,
       title: 'Skip the Store, Shop More.',
       desc: 'Groceries at your fingertips. Fast delivery, easy checkout, zero hassle.',
       img: '/hero2.webp',
+       color:'text-gray-600'
     },
     {
       id: 3,
       title: 'Big Savings on Everyday Essentials!',
       desc: 'Get the best deals on fresh produce, dairy, snacks & more — limited time only!',
       img: '/hero3.webp',
+       color:'text-gray-600'
     },
   ];
 
