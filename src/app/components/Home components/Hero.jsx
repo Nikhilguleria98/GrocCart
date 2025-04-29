@@ -44,7 +44,7 @@ const Hero = () => {
   const currentSlide = data[currentIndex];
 
   return (
-    <div className={`relative h-[500px] responsivewidth mt-5 transition-opacity duration-500 ${isVisible ? "opacity-100" : "opacity-0"}`}>
+    <div className={`relative h-[500px] responsivewidth mt-5  transition-opacity duration-500 ${isVisible ? "opacity-100" : "opacity-0"}`}>
       <img
         src={currentSlide.img}
         alt={currentSlide.title}
