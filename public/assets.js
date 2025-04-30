@@ -217,6 +217,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+    rating:4
   },
   {
     _id: "gd47g34h",
@@ -224,7 +225,7 @@ export const dummyProducts = [
     category: "Vegetables",
     price: 40,
     offerPrice: 35,
-    image: [tomato_image],
+    image: ["./tomato_image.png"],
     description: [
       "Juicy and ripe",
       "Rich in Vitamin C",
@@ -234,6 +235,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+    rating:4
   },
   {
     _id: "gd48g45h",
@@ -241,7 +243,7 @@ export const dummyProducts = [
     category: "Vegetables",
     price: 30,
     offerPrice: 28,
-    image: [carrot_image],
+    image: ["./carrot_image.png"],
     description: [
       "Sweet and crunchy",
       "Good for eyesight",
@@ -250,6 +252,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+    rating:4
   },
   {
     _id: "gd49g56h",
@@ -257,7 +260,7 @@ export const dummyProducts = [
     category: "Vegetables",
     price: 18,
     offerPrice: 15,
-    image: [spinach_image_1],
+    image: ["./spinach_image_1.png"],
     description: [
       "Rich in iron",
       "High in vitamins",
@@ -266,6 +269,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+    rating:4
   },
   {
     _id: "gd50g67h",
@@ -273,7 +277,7 @@ export const dummyProducts = [
     category: "Vegetables",
     price: 22,
     offerPrice: 19,
-    image: [onion_image_1],
+    image: ['./onion_image_1.png'],
     description: [
       "Fresh and pungent",
       "Perfect for cooking",
@@ -282,6 +286,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+    rating:4
   },
 
   // Fruits
@@ -302,6 +307,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+    rating:4
   },
   {
     _id: "ek52j23k",
@@ -318,6 +324,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+    rating:4
   },
   {
     _id: "ek53j34k",
@@ -334,6 +341,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+    rating:4
   },
   {
     _id: "ek54j45k",
@@ -351,6 +359,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+    rating:4
   },
   {
     _id: "ek55j56k",

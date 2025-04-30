@@ -8,3 +8,12 @@
       @apply mx-auto w-[94%] sm:w-[90%] md:w-[88%] lg:w-[89.5%];
     }
   }
+
+  @keyframes ShrinkBar {
+    from {
+      width: 100%;
+    }
+    to {
+      width: 0%;
+    }
+  }
