@@ -1,4 +1,5 @@
 'use client'
+import { ShoppingCart } from 'lucide-react';
 import React from 'react';
 import { useSelector } from 'react-redux';
 
@@ -19,6 +20,7 @@ const ProductCard = () => {
             <div className='flex gap-2'>
             <p>₹{product.offerPrice}</p>
             <p className='line-through text-gray-400'>{product.price}</p>
+            <ShoppingCart/>
             </div>
         </div>
     ))
