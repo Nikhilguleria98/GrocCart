@@ -3,7 +3,8 @@ import { Flag } from "lucide-react";
 
 const initialState={
     isLoggedIn: true,
-    user:null
+    user:null,
+    
 }
 export const mySlice = createSlice({
   name: "auth",
