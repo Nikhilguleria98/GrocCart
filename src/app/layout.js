@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "./components/global components/Navbar";
 import { store } from "@/store";
 import { Provider } from "react-redux";
+import Footer from "./components/global components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,8 +28,11 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
       <Provider store={store}>
-      <Navbar/>
+      <div className="flex flex-col min-h-screen justify-between">
+        <Navbar/>
       {children}
+      <Footer/>
+      </div>
       </Provider>
       </body>
     </html>
