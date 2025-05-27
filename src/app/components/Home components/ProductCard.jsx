@@ -19,11 +19,11 @@ const ProductCard = () => {
  <div className='responsivewidth mt-10 relative'>
  {
   showPopup && (
-    <div className='fixed top-20 transform -translate-x-1/2 left-1/2 bg-green-400 text-white p-2 rounded shadow-lg'>
+    <div className='fixed top-20 transform -translate-x-1/2 left-1/2 bg-white shadow-2xl p-2 rounded '>
       ✅ Added to Cart
       <div className='h-1  mt-2 rounded relative '>
         <div
-          className='absolute top-0 left-0 h-full bg-white'
+          className='absolute top-0 left-0 h-full bg-green-600'
           style={{
             animation: "ShrinkBar 5s linear forwards",
             width: "100%",
@@ -35,12 +35,13 @@ const ProductCard = () => {
 }
 
           <h2 className='text-3xl font-bold sm:text-left text-center'>Best Seller</h2>
-     <div className=" grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mt-10">
+ <div className='flex justify-center'>
+      <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mt-10 w-96 sm:w-full">
  {
-    products.slice(0,5).map((product)=>(
+    products.filter((item)=>item.inStock).slice(0,5).map((product)=>(
         <div key={product._id} className='border border-gray-300 shadow-2xl  p-4 cursor-pointer'>
             <div className='flex justify-center items-center'>
-            <img src={product.image[0]} alt="" className='w-48 hover:scale-105 duration-300'/>
+            <img src={product.image[0]} alt="" className='w-40 hover:scale-105 duration-300'/>
             </div>
             <p className='text-gray-400'>{product.category}</p>
             <p className='font-semibold text-lg'>{product.name}</p>
@@ -56,13 +57,13 @@ const ProductCard = () => {
 
             <div className='flex gap-2 justify-between items-center mt-3'>
      
-      <div className='flex gap-2 text-green-500 font-semibold text-lg '>
-            <p className='text-[3vw] sm:text-[3] md:text-[1.5vw]'>₹{product.offerPrice}</p>
-            <p className='line-through text-gray-400 text-[3vw] sm:text-[3] md:text-[1.5vw]'>{product.price}</p>
+      <div className='flex items-center gap-2 text-green-500 font-semibold text-lg '>
+            <p className='text-[4vw] sm:text-[3] md:text-[1.3vw]'>₹{product.offerPrice}</p>
+            <p className='line-through text-gray-400 text-[3vw] sm:text-[3] md:text-[1.2vw]'>{product.price}</p>
             </div>
-            <div onClick={()=>handleAddtoCart(product)} className='flex border border-green-300 rounded-sm bg-green-200/50 gap-1 p-[0.7vw] cursor-pointer'>
-            <ShoppingCart className='text-green-500 '/>
-            <p className='text-green-500 text-'>Add</p>
+            <div onClick={()=>handleAddtoCart(product)} className='flex items-center border border-green-300 rounded-sm bg-green-200/50 gap-1 p-[0.7vw] cursor-pointer'>
+            <ShoppingCart size={20} className='text-green-500 '/>
+            <p className='text-green-500 text-sm'>Add</p>
             </div>
      
             </div>
@@ -71,6 +72,7 @@ const ProductCard = () => {
  }
      
     </div>
+ </div>
  </div>
   );
 };
