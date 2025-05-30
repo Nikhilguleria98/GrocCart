@@ -1,4 +1,5 @@
 'use client';
+import Login from '@/app/login/page';
 import { CircleUserRound, Menu, Search, ShoppingCart, X } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -7,6 +8,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const pathName = usePathname();
 
   const dispatch = useDispatch();
@@ -36,8 +38,8 @@ const Navbar = () => {
 
   return (
     <>
-      <div className='relative'>
-        <nav className='fixed top-0 backdrop-blur-3xl opacity-85 w-full z-50 bg-white flex justify-between items-center p-5 lg:px-20 border-b border-gray-400'>
+      <div className='relative z-50'>
+        <nav className='fixed top-0 w-full z-50 bg-white flex justify-between items-center p-5 lg:px-20 border-b border-gray-400'>
           <div>
             <Link href='/' className='text-rose text-2xl font-semibold'>
               Groc<span className='text-green-500'>Cart</span>
@@ -75,25 +77,35 @@ const Navbar = () => {
               <ShoppingCart />
             </Link>
 
-            {isLoggedIn ? (
-              <div className='relative group cursor-pointer'>
-                <div className='flex items-center'>
-                  <CircleUserRound />
-                </div>
-                <div className='absolute top-7 -right-16 rounded-lg z-40 group-hover:block hidden w-36 bg-green-500 text-white p-2 space-y-3 text-center'>
-                  <div className='cursor-pointer hover:bg-gray-300 w-full duration-300 rounded-lg p-2'>
-                    My Orders
-                  </div>
-                  <button className='cursor-pointer hover:bg-gray-300 w-full duration-300 rounded-lg p-2'>
-                    Logout
-                  </button>
-                </div>
-              </div>
-            ) : (
-              <button className='bg-green-500 py-2 px-3 text-white cursor-pointer hover:bg-green-700 duration-300 rounded-full'>
-                Login
-              </button>
-            )}
+         {!isLoggedIn ? (
+  <>
+    <button
+      onClick={() => setIsModalOpen(true)}
+      className="bg-green-500 py-2 px-3 text-white cursor-pointer hover:bg-green-700 duration-300 rounded-full"
+    >
+      Login
+    </button>
+    {isModalOpen && <Login onClose={() => setIsModalOpen(false)} />}
+  </>
+) : (
+  <div className='relative group cursor-pointer'>
+    <div className='flex items-center'>
+      <CircleUserRound />
+    </div>
+    <div className='absolute top-7 -right-16 rounded-lg z-40 group-hover:block hidden w-36 bg-green-500 text-white p-2 space-y-3 text-center'>
+      <div className='cursor-pointer hover:bg-gray-300 w-full duration-300 rounded-lg p-2'>
+        My Orders
+      </div>
+      <button
+        onClick={() => dispatch(logout())}
+        className='cursor-pointer hover:bg-gray-300 w-full duration-300 rounded-lg p-2'
+      >
+        Logout
+      </button>
+    </div>
+  </div>
+)}
+
           </div>
 
           {/* Mobile Button */}
@@ -105,22 +117,40 @@ const Navbar = () => {
         </nav>
 
         {/* Mobile Menu */}
-        {isOpen && (
-          <nav className='flex flex-col lg:justify-evenly justify-between items-center p-5 lg:p-2 w-1/2 h-screen bg-white fixed top-[72px] right-0 z-40 shadow-md'>
-            <div className='flex flex-col lg:hidden gap-5 w-full'>
-              {links.map((link) => (
-                <Link
-                  key={link.name}
-                  href={link.href}
-                  className='hover:bg-gray-200 rounded-lg p-2 w-full text-center'
-                  onClick={() => setIsOpen(false)}
-                >
-                  {link.name}
-                </Link>
-              ))}
-            </div>
-          </nav>
-        )}
+      {/* Mobile Menu */}
+{isOpen && (
+  <nav className='flex flex-col lg:justify-evenly justify-between items-center p-5 lg:p-2 w-1/2 h-screen bg-white fixed top-[72px] right-0 z-40 shadow-md'>
+    <div className='flex flex-col lg:hidden gap-5 w-full'>
+      {links.map((link) => (
+        <Link
+          key={link.name}
+          href={link.href}
+          className='hover:bg-gray-200 rounded-lg p-2 w-full text-center'
+          onClick={() => setIsOpen(false)}
+        >
+          {link.name}
+        </Link>
+      ))}
+
+      {/* Mobile Login Button */}
+      {!isLoggedIn && (
+        <button
+          onClick={() => {
+            setIsModalOpen(true);
+            setIsOpen(false);
+          }}
+          className='bg-green-500 mt-6 w-full text-white py-2 rounded-lg hover:bg-green-700 duration-300'
+        >
+          Login
+        </button>
+      )}
+    </div>
+  </nav>
+)}
+
+{/* Modal for both desktop & mobile */}
+{isModalOpen && <Login onClose={() => setIsModalOpen(false)} />}
+
       </div>
     </>
   );
