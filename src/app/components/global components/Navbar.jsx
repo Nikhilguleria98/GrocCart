@@ -37,7 +37,7 @@ const Navbar = () => {
   return (
     <>
       <div className='relative'>
-        <nav className='fixed top-0 backdrop-blur-2xl opacity-85 w-full z-50 bg-white flex justify-between items-center p-5 lg:px-20 border-b border-gray-400'>
+        <nav className='fixed top-0 backdrop-blur-3xl opacity-85 w-full z-50 bg-white flex justify-between items-center p-5 lg:px-20 border-b border-gray-400'>
           <div>
             <Link href='/' className='text-rose text-2xl font-semibold'>
               Groc<span className='text-green-500'>Cart</span>
