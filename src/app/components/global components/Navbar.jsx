@@ -85,7 +85,6 @@ const Navbar = () => {
     >
       Login
     </button>
-    {isModalOpen && <Login onClose={() => setIsModalOpen(false)} />}
   </>
 ) : (
   <div className='relative group cursor-pointer'>
@@ -93,7 +92,8 @@ const Navbar = () => {
       <CircleUserRound />
     </div>
     <div className='absolute top-7 -right-16 rounded-lg z-40 group-hover:block hidden w-36 bg-green-500 text-white p-2 space-y-3 text-center'>
-      <div className='cursor-pointer hover:bg-gray-300 w-full duration-300 rounded-lg p-2'>
+      <div className='cursor-pointer hover:bg-gray-300 w-
+      full duration-300 rounded-lg p-2'>
         My Orders
       </div>
       <button
@@ -116,7 +116,7 @@ const Navbar = () => {
           </div>
         </nav>
 
-        {/* Mobile Menu */}
+      
       {/* Mobile Menu */}
 {isOpen && (
   <nav className='flex flex-col lg:justify-evenly justify-between items-center p-5 lg:p-2 w-1/2 h-screen bg-white fixed top-[72px] right-0 z-40 shadow-md'>
@@ -149,9 +149,13 @@ const Navbar = () => {
 )}
 
 {/* Modal for both desktop & mobile */}
-{isModalOpen && <Login onClose={() => setIsModalOpen(false)} />}
-
+{isModalOpen && (
+  <div className="fixed inset-0  z-[9999] flex justify-center items-center">
+    <Login onClose={() => setIsModalOpen(false)} />
+  </div>
+)}
       </div>
+
     </>
   );
 };

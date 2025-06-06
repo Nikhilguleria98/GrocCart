@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { Flag } from "lucide-react";
 
 const initialState={
     isLoggedIn: false,
