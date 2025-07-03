@@ -1,8 +1,10 @@
 'use client';
 import Login from '@/app/login/page';
+import { setSearchQuery } from '@/features/productsSlice';
 import { CircleUserRound, Menu, Search, ShoppingCart, X } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -10,9 +12,17 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const pathName = usePathname();
+  const router = useRouter()
 
   const dispatch = useDispatch();
   const { isLoggedIn, user } = useSelector((state) => state.auth);
+  const searchQuery = useSelector((state)=>state.products.searchQuery)
+
+ useEffect(() => {
+  if (searchQuery.length > 0) {
+    router.push("/products");
+  }
+}, [searchQuery]); 
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
@@ -67,6 +77,7 @@ const Navbar = () => {
           <div className='hidden lg:flex justify-center items-center gap-4'>
             <div className='flex p-2 rounded-full text-black border border-gray-300'>
               <input
+              onChange={(e)=>dispatch(setSearchQuery(e.target.value))}
                 type='text'
                 placeholder='Search here...'
                 className='w-full h-full outline-0 px-2'

@@ -296,7 +296,7 @@ export const dummyProducts = [
     category: "Fruits",
     price: 120,
     offerPrice: 110,
-    image: [apple_image],
+    image: ["./apple_image.png"],
     description: [
       "Crisp and juicy",
       "Rich in fiber",
@@ -315,7 +315,7 @@ export const dummyProducts = [
     category: "Fruits",
     price: 80,
     offerPrice: 75,
-    image: [orange_image],
+    image: ["./orange_image.png"],
     description: [
       "Juicy and sweet",
       "Rich in Vitamin C",
@@ -332,7 +332,7 @@ export const dummyProducts = [
     category: "Fruits",
     price: 50,
     offerPrice: 45,
-    image: [banana_image_1],
+    image: ["./banana_image_1.png"],
     description: [
       "Sweet and ripe",
       "High in potassium",
@@ -350,7 +350,7 @@ export const dummyProducts = [
 
     price: 150,
     offerPrice: 140,
-    image: [mango_image_1],
+    image: ["./mango_image_1.png"],
     description: [
       "Sweet and flavorful",
       "Perfect for smoothies and desserts",
@@ -367,7 +367,7 @@ export const dummyProducts = [
     category: "Fruits",
     price: 70,
     offerPrice: 65,
-    image: [grapes_image_1],
+    image: ["./grapes_image_1.png"],
     description: [
       "Fresh and juicy",
       "Rich in antioxidants",
@@ -376,6 +376,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+     rating:4
   },
 
   // Dairy
@@ -385,7 +386,7 @@ export const dummyProducts = [
     category: "Dairy",
     price: 60,
     offerPrice: 55,
-    image: [amul_milk_image],
+    image: ["./amul_milk_image.png"],
     description: [
       "Pure and fresh",
       "Rich in calcium",
@@ -395,6 +396,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+     rating:4
   },
   {
     _id: "ek57j78k",
@@ -402,7 +404,7 @@ export const dummyProducts = [
     category: "Dairy",
     price: 90,
     offerPrice: 85,
-    image: [paneer_image],
+    image: ["./paneer_image.png"],
     description: [
       "Soft and fresh",
       "Rich in protein",
@@ -411,6 +413,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+     rating:4
   },
   {
     _id: "ek58j89k",
@@ -418,7 +421,7 @@ export const dummyProducts = [
     category: "Dairy",
     price: 90,
     offerPrice: 85,
-    image: [eggs_image],
+    image: ["./eggs_image.png"],
     description: [
       "Farm fresh",
       "Rich in protein",
@@ -427,6 +430,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+     rating:4
   },
   {
     _id: "ek59j90k",
@@ -434,7 +438,7 @@ export const dummyProducts = [
     category: "Dairy",
     price: 90,
     offerPrice: 85,
-    image: [paneer_image_2],
+    image: ["./paneer_image_2.png"],
     description: [
       "Soft and fresh",
       "Rich in protein",
@@ -443,6 +447,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+     rating:4
   },
   {
     _id: "ek60j01k",
@@ -450,7 +455,7 @@ export const dummyProducts = [
     category: "Dairy",
     price: 140,
     offerPrice: 130,
-    image: [cheese_image],
+    image: ["./cheese_image.png"],
     description: [
       "Creamy and delicious",
       "Perfect for pizzas and sandwiches",
@@ -459,6 +464,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+     rating:4
   },
 
   // Drinks
@@ -468,7 +474,7 @@ export const dummyProducts = [
     category: "Drinks",
     price: 80,
     offerPrice: 75,
-    image: [coca_cola_image],
+    image: ["./coca_cola_image.png"],
     description: [
       "Refreshing and fizzy",
       "Perfect for parties and gatherings",
@@ -477,6 +483,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+     rating:4
   },
   {
     _id: "ek62j23k",
@@ -484,7 +491,7 @@ export const dummyProducts = [
     category: "Drinks",
     price: 78,
     offerPrice: 73,
-    image: [pepsi_image],
+    image: ["./pepsi_image.png"],
     description: [
       "Chilled and refreshing",
       "Perfect for celebrations",
@@ -493,6 +500,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+     rating:4
   },
   {
     _id: "ek63j34k",
@@ -500,7 +508,7 @@ export const dummyProducts = [
     category: "Drinks",
     price: 79,
     offerPrice: 74,
-    image: [sprite_image_1],
+    image: ["./sprite_image_1.png"],
     description: [
       "Refreshing citrus taste",
       "Perfect for hot days",
@@ -509,6 +517,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+     rating:4
   },
   {
     _id: "ek64j45k",
@@ -516,7 +525,7 @@ export const dummyProducts = [
     category: "Drinks",
     price: 77,
     offerPrice: 72,
-    image: [fanta_image_1],
+    image: ["./fanta_image_1.png"],
     description: [
       "Sweet and fizzy",
       "Great for parties and gatherings",
@@ -525,6 +534,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+     rating:4
   },
   {
     _id: "ek65j56k",
@@ -532,7 +542,7 @@ export const dummyProducts = [
     category: "Drinks",
     price: 76,
     offerPrice: 71,
-    image: [seven_up_image_1],
+    image: ["./seven_up_image_1.png"],
     description: [
       "Refreshing lemon-lime flavor",
       "Perfect for refreshing",
@@ -541,6 +551,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+     rating:4
   },
 
   // Grains
@@ -550,7 +561,7 @@ export const dummyProducts = [
     category: "Grains",
     price: 550,
     offerPrice: 520,
-    image: [basmati_rice_image],
+    image: ["./basmati_rice_image.png"],
     description: [
       "Long grain and aromatic",
       "Perfect for biryani and pulao",
@@ -559,6 +570,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+     rating:4
   },
   {
     _id: "ek67j78k",
@@ -566,7 +578,7 @@ export const dummyProducts = [
     category: "Grains",
     price: 250,
     offerPrice: 230,
-    image: [wheat_flour_image],
+    image: ["./wheat_flour_image.png"],
     description: [
       "High-quality whole wheat",
       "Soft and fluffy rotis",
@@ -575,6 +587,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+     rating:4
   },
   {
     _id: "ek68j89k",
@@ -582,7 +595,7 @@ export const dummyProducts = [
     category: "Grains",
     price: 450,
     offerPrice: 420,
-    image: [quinoa_image],
+    image: ["./quinoa_image.png"],
     description: [
       "High in protein and fiber",
       "Gluten-free",
@@ -591,6 +604,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+     rating:4
   },
   {
     _id: "ek69j90k",
@@ -598,7 +612,7 @@ export const dummyProducts = [
     category: "Grains",
     price: 120,
     offerPrice: 110,
-    image: [brown_rice_image],
+    image: ["./brown_rice_image.png"],
     description: [
       "Whole grain and nutritious",
       "Helps in weight management",
@@ -607,6 +621,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+     rating:4
   },
   {
     _id: "ek70j01k",
@@ -614,7 +629,7 @@ export const dummyProducts = [
     category: "Grains",
     price: 150,
     offerPrice: 140,
-    image: [barley_image],
+    image: ["./barley_image.png"],
     description: [
       "Rich in fiber",
       "Helps improve digestion",
@@ -623,6 +638,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+     rating:4
   },
 
   // Bakery
@@ -632,7 +648,7 @@ export const dummyProducts = [
     category: "Bakery",
     price: 40,
     offerPrice: 35,
-    image: [brown_bread_image],
+    image: ["./brown_bread_image.png"],
     description: [
       "Soft and healthy",
       "Made from whole wheat",
@@ -641,6 +657,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+     rating:4
   },
   {
     _id: "bk02b30y",
@@ -648,7 +665,7 @@ export const dummyProducts = [
     category: "Bakery",
     price: 50,
     offerPrice: 45,
-    image: [butter_croissant_image],
+    image: ["./butter_croissant_image.png"],
     description: [
       "Flaky and buttery",
       "Freshly baked",
@@ -657,6 +674,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+     rating:4
   },
   {
     _id: "bk03c31x",
@@ -664,7 +682,7 @@ export const dummyProducts = [
     category: "Bakery",
     price: 350,
     offerPrice: 325,
-    image: [chocolate_cake_image],
+    image: ["./chocolate_cake_image.png"],
     description: [
       "Rich and moist",
       "Made with premium cocoa",
@@ -673,6 +691,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+     rating:4
   },
   {
     _id: "bk04d32w",
@@ -680,7 +699,7 @@ export const dummyProducts = [
     category: "Bakery",
     price: 45,
     offerPrice: 40,
-    image: [whole_wheat_bread_image],
+    image: ["./whole_wheat_bread_image.png"],
     description: [
       "Healthy and nutritious",
       "Made with whole wheat flour",
@@ -689,6 +708,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+     rating:4
   },
   {
     _id: "bk05e33v",
@@ -696,7 +716,7 @@ export const dummyProducts = [
     category: "Bakery",
     price: 100,
     offerPrice: 90,
-    image: [vanilla_muffins_image],
+    image: ["./vanilla_muffins_image.png"],
     description: [
       "Soft and fluffy",
       "Perfect for a quick snack",
@@ -705,6 +725,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+     rating:4
   },
 
   // Instant
@@ -715,7 +736,7 @@ export const dummyProducts = [
 
     price: 55,
     offerPrice: 50,
-    image: [maggi_image],
+    image: ["./maggi_image.png"],
     description: [
       "Instant and easy to cook",
       "Delicious taste",
@@ -724,6 +745,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+     rating:4
   },
   {
     _id: "in02g26t",
@@ -731,7 +753,7 @@ export const dummyProducts = [
     category: "Instant",
     price: 45,
     offerPrice: 40,
-    image: [top_ramen_image],
+    image: ["./top_ramen_image.png"],
     description: [
       "Quick and easy to prepare",
       "Spicy and flavorful",
@@ -740,6 +762,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+     rating:4
   },
   {
     _id: "in03h27s",
@@ -747,7 +770,7 @@ export const dummyProducts = [
     category: "Instant",
     price: 35,
     offerPrice: 30,
-    image: [knorr_soup_image],
+    image: ["./knorr_soup_image.png"],
     description: [
       "Convenient for on-the-go",
       "Healthy and nutritious",
@@ -756,6 +779,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+     rating:4
   },
   {
     _id: "in04i28r",
@@ -763,7 +787,7 @@ export const dummyProducts = [
     category: "Instant",
     price: 50,
     offerPrice: 45,
-    image: [yippee_image],
+    image: ["./yippee_image.png"],
     description: [
       "Non-fried noodles for healthier choice",
       "Tasty and filling",
@@ -772,6 +796,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+     rating:4
   },
   {
     _id: "in05j29q",
@@ -779,7 +804,7 @@ export const dummyProducts = [
     category: "Instant",
     price: 40,
     offerPrice: 35,
-    image: [maggi_oats_image],
+    image: ["./maggi_oats_image.png"],
     description: [
       "Healthy alternative with oats",
       "Good for digestion",
@@ -788,6 +813,7 @@ export const dummyProducts = [
     createdAt: "2025-03-25T07:17:46.018Z",
     updatedAt: "2025-03-25T07:18:13.103Z",
     inStock: true,
+     rating:4
   },
 ];
 

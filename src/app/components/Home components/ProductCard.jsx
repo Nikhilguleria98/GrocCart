@@ -3,7 +3,7 @@ import { ShoppingCart, Star } from 'lucide-react';
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 
-const ProductCard = () => {
+const ProductCard = ({product}) => {
   const products = useSelector((state) => state.products?.items);
  const [showPopup,setShowPopup] = useState(false)
 
